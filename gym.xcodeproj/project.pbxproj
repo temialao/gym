@@ -13,6 +13,7 @@
 		A79B1B9129F2A7E800746329 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B1B9029F2A7E800746329 /* Preview Assets.xcassets */; };
 		A79B1B9329F2A7E800746329 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B1B9229F2A7E800746329 /* Persistence.swift */; };
 		A79B1B9629F2A7E800746329 /* gym.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A79B1B9429F2A7E800746329 /* gym.xcdatamodeld */; };
+		A79B1BB129F2B29B00746329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A79B1BB029F2B29A00746329 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A79B1B9229F2A7E800746329 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A79B1B9529F2A7E800746329 /* gym.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gym.xcdatamodel; sourceTree = "<group>"; };
 		A79B1B9729F2A7E800746329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79B1BB029F2B29A00746329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A79B1B9229F2A7E800746329 /* Persistence.swift */,
 				A79B1B9729F2A7E800746329 /* Info.plist */,
 				A79B1B9429F2A7E800746329 /* gym.xcdatamodeld */,
+				A79B1BB029F2B29A00746329 /* GoogleService-Info.plist */,
 				A79B1B8F29F2A7E800746329 /* Preview Content */,
 			);
 			path = gym;
@@ -119,6 +122,9 @@
 				Base,
 			);
 			mainGroup = A79B1B7D29F2A7E600746329;
+			packageReferences = (
+				A79B1BB229F2B30F00746329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A79B1B8729F2A7E600746329 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79B1B9129F2A7E800746329 /* Preview Assets.xcassets in Resources */,
+				A79B1BB129F2B29B00746329 /* GoogleService-Info.plist in Resources */,
 				A79B1B8E29F2A7E800746329 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +354,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A79B1BB229F2B30F00746329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		A79B1B9429F2A7E800746329 /* gym.xcdatamodeld */ = {
